@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback - Chic & Cozy Designs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .feedback {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      background-color: #fdfdfd;
+    }
+
+    .feedback h2 {
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form label {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      margin-top: 1.5rem;
+      padding: 0.6rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #555;
+    }
+
+    .testimonials {
+      padding: 2rem;
+    }
+
+    .testimonial {
+      margin-bottom: 1.5rem;
+      background-color: #f0f0f0;
+      padding: 1rem;
+      border-left: 4px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chic & Cozy Designs</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="feedback">
+      <h2>We'd Love Your Feedback</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+
+      <div class="testimonial">
+        <p>"Chic & Cozy completely transformed my home. Their attention to detail and ability to match my style was outstanding!"</p>
+        <h4>– Lady R., Gaborone</h4>
+      </div>
+
+      <div class="testimonial">
+        <p>"I loved the virtual consultation process. It was easy, fun, and the design they gave me was exactly what I wanted."</p>
+        <h4>– Bogolo R., Maun</h4>
+      </div>
+
+      <div class="testimonial">
+        <p>"The team is professional, creative, and incredibly warm. My living room has never looked this good."</p>
+        <h4>– Kabelo M., Kanye</h4>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.querySelector('form');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Stop default submission
+
+        const name = document.getElementById('name').value;
+
+        alert(`Thank you for your feedback, ${name}!`);
+
+        form.reset(); // Optional: reset the form fields
+      });
+    });
+  </script>
+</body>
+</html>

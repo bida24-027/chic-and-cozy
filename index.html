@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chic & Cozy Designs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Highlighted Designs Styling */
+    .highlighted-designs {
+      display: flex;
+      gap: 20px;
+      padding: 2rem 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .design {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .design:hover {
+      transform: scale(1.03);
+    }
+
+    .design img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .design p {
+      margin: 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chic & Cozy Designs</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Chic & Cozy Designs</h2>
+      <p>Your home, your style. Let us help you make it beautiful.</p>
+    </section>
+
+    <section class="brand-summary">
+      <h2>About Chic & Cozy Designs</h2>
+      <p>
+        Chic & Cozy Designs is dedicated to transforming ordinary living spaces into elegant, warm, and personalized environments. Our mission is to blend modern design principles with cozy comfort, making your home a true reflection of your lifestyle.
+      </p>
+    
+      <h3>Our Main Services</h3>
+      <ul>
+        <li>Full Home Makeover</li>
+        <li>Room Styling & Staging</li>
+        <li>Color Consultation</li>
+        <li>Virtual Design Sessions</li>
+      </ul>
+    
+      <h3>Highlighted Designs</h3>
+      <div class="highlighted-designs">
+        <div class="design">
+          <img src="images/living room 11.jpg" alt="Modern Living Room">
+          <p>Elegant Living Room</p>
+        </div>
+        <div class="design">
+          <img src="images/bd 7.jpg" alt="Stylish Bedroom">
+          <p>Stylish Bedroom Retreat</p>
+        </div>
+        <div class="design">
+          <img src="images/kitchen12.jpg" alt="Cozy Kitchen">
+          <p>Cozy Kitchen Layout</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Chic & Cozy Designs. All rights reserved.</p>
+  </footer>
+</body>
+</html>
